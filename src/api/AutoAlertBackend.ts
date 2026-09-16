@@ -2,7 +2,7 @@ import axios from "axios";
 import { useAuthStore } from "@/store/authStore";
 
 export const autoAlertBackend =  axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:8080/api",
+  baseURL: import.meta.env.API_URL || "http://localhost:8080/api",
   headers: {
     "Content-Type": "application/json",
   },
